@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+#include <math.h>
+
+using namespace std;
+
+void
+task10 ()
+{
+  cout << "task:10\n\n";
+  double a = 0, b = 1939;
+  cout << "Input year the start of the date World War II and press <Enter>:\n\n";
+  cout << "Input the year:";
+  cin >> a;
+  if (a == 1939)
+    {
+      cout << "You are right, it is:" << a << endl;
+    }  
+    else
+    {
+      cout << "You aren't right!, the right answer is:" << b << endl;
+ }
+}
+
+void task18 ()
+{
+  cout << "task:18\n\n";
+  double a = 0, timeofring = 0, z = 0, c = 2, disscount = 0.48;
+  cout << "Input time of ringing:\n\n";
+  cin >> timeofring;
+  cout << "Input day of weak:";
+  cin >> a;
+  if (a > 7 || a < 1)
+  {
+      cout << "A wrong, enter the correct date" << endl;
+  }
+  else
+  {
+      if (a == 1 || a == 2 || a == 3 || a == 4 || a == 5 && a == 6 && a == 7)
+    {
+      z = timeofring * c;
+      cout << "Your call costs:" << z;
+    }  
+    else
+    {
+      z = (timeofring * c) - disscount;
+      cout << "Your call costs:" << z << endl;
+    }
+  }
+}
+
+int main()
+{
+    task10();
+	task18();
+}
+
+
+
